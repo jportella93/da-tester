@@ -38,7 +38,7 @@ var methods = {
     filterTags: function (tags, minFrequency) {
       var filtered = [];
       tags.forEach(function (tag) {
-        if (tag.frequency >= minFrequency) filtered.push(tag);
+        if (tag.freq >= minFrequency) filtered.push(tag);
       });
       return filtered;
     },
