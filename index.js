@@ -3,7 +3,7 @@ var _ = require('lodash');
 
 var methods = {
 
-  instagram: {
+  instatags: {
 
     evalHashtagFrequency: function (data) {
 
@@ -11,11 +11,8 @@ var methods = {
 
       data.forEach(function (media) {
         media.tags.forEach(function (tag) {
-          if (tags[tag]) {
-            tags[tag]++;
-          } else {
-            tags[tag] = 1;
-          }
+          if (tags[tag]) tags[tag]++;
+          else tags[tag] = 1;
         });
       });
 
@@ -46,11 +43,8 @@ var methods = {
     filterMedia: function (userMedia, tag) {
       var filtered = [];
       userMedia.forEach(function (media) {
-        if (media.tags.includes(tag)) {
-          filtered.push(media);
-        }
+        if (media.tags.includes(tag)) filtered.push(media);
       });
-
       return filtered;
     }
 
@@ -58,15 +52,15 @@ var methods = {
 
   underline: {
 
-    min: function () {
+    max: function (list, iteratee, context) {
 
     },
 
-    max: function () {
+    min: function (list, iteratee, context) {
 
     },
 
-    size: function () {
+    size: function (list) {
 
     }
 

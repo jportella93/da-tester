@@ -1,14 +1,13 @@
 'use strict';
 
 require('chai').should();
-var _ = require('lodash');
 
 var methods = require('../index.js');
-var instagram = methods.instagram;
+var instatags = methods.instatags;
 var underline = methods.underline;
 var mocks = require('./mocks.js');
 
-describe('Instagram', function () {
+describe('Instatags', function () {
 
 });
 
