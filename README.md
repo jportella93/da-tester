@@ -2,7 +2,7 @@
 
 For this sprint you’ll convert yourself in “da tester”, the badass developer that can write code with good automated tests. For starters, read more about unit testing [here](https://en.wikipedia.org/wiki/Unit_testing). Ready to get your hands dirty now?
 
-We’ve set up the testing environment for you. To implement the actual tests you need some valid input: store your mock data in `test/mocks.js`.
+We’ve set up the testing environment for you. To implement the actual tests you need some valid input: you can store your mock data in `test/mocks.js` to make it reusable, or include it directly in your tests (each approach has its pros and cons).
 
 You have [Lodash](https://lodash.com/) available in `index.js`, feel free to use it.
 
